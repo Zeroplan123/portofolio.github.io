@@ -454,7 +454,8 @@ nav p {
 
 .button:hover{
     box-shadow: 0 0 5px #5bc7f5;
-    background-color: #fff;
+    background: none;
+    backdrop-filter: blur(18px);
     width: 200px;
 }
 
