@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="portofolio.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -15,8 +16,8 @@
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Project</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">study</a></li>
+                <li><a href="index.html#page1">About Me</a></li>
+                <li><a href="index.html#services">Services</a></li>
                 <li><a href="">contact</a></li>
             </ul>
         </div>
@@ -29,35 +30,39 @@
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Project</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">study</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="index.html#services">Services</a></li>
                 <li><a href="">contact</a></li>
             </ul>
         </div>
 
 
     <!-- home page -->
+     
 
     <section class="home" id="home">
-        <div class="home-img">
+        <div data-aos="fade-down" data-aos-duration="1500">
+        <div class="home-img"> 
             <img src="assets/home-images.enc" alt="">
         </div>
-
-        <div class="home-content">
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1500">
+        <div class="home-content" >
             <h1>Hi I'm <span>Fahri</span></h1>
             <h3 class="text-animation">I'm a <span class="auto-text"></span></h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem vitae suscipit ad velit, quasi accusamus non beatae, tempora asperiores, soluta eius quo! Ipsum veritatis minima nemo tempore repellendus sint magnam!</p>
+            <p>In every journey to success, challenges are loyal companions that test our resilience and determination. However, never let adversity stop you in your tracks. Remember that every obstacle is an opportunity to grow and learn.</p>
 
             <div class="btn-grup">
                 <a href="#" class="tombol"><span>Hire me</span><i></i></a>
 
             </div>
         </div>
+    </div>
     </section>
 
     <!-- content-1 -->
 
-    <section class="content-1">
+    <section class="content-1" id="page1" >
         <div class="content-1-wrapper">
             <div class="bubbles">
                 <span style="--i:11;"></span>
@@ -101,37 +106,46 @@
                 <span style="--i:13;"></span>
                 <span style="--i:28;"></span>
             </div>
-            <div class="img-content-1"><img src="assets/home-images.enc" alt=""></div>
 
-            <div class="content-1-text"><h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatibus odio inventore, deserunt placeat dolores hic repellat nam totam quam beatae, cum laboriosam? Laudantium velit, rem qui ex hic numquam? lo</p></div>
+            <div class="img-content-1" data-aos="fade-right" data-aos-duration="2000" ><img src="assets/home-images.enc" alt="" id="aboutMe"></div>
+        
+            <div class="content-1-text" data-aos="fade-left" data-aos-duration="2000"><h1>About Me</h1>
+              <div class="Bio"  >
+                <p >Name: Fahri Ramadhan Gani <br>
+                    Birthday:21-09-2007 </p>
+                <p>last Education: SMK 1 Jakarta <br>
+                    place of birth: Jakarta</p>
+            </div>
+            <p style="text-align: center;">Fahri is a student at SMK 1 jakarta with a hobby of coding and gaming and has a deep passion in web development and game creation and I am committed to creating work that is not only innovative but also impactful.</p>
+           </div>
 
             
         </div>
 
-        <div class="sosial-media">
+        <div class="sosial-media" data-aos="fade-up" data-aos-duration="1700">
             <div class="button">
             <div class="icons"><i class="fa-brands fa-facebook-f"></i></div>
-            <span>Facebook</span></div>
+            <span><a href="">Facebook</a></span></div>
 
             <div class="button">
             <div class="icons"><i class="fa-brands fa-instagram"></i></div>
-            <span>Instagram</span></div>
+            <span><a href="https://www.instagram.com/fahri_v07/" target="_blank">Instagram</a></span></div>
 
             <div class="button">
             <div class="icons"><i class="fa-brands fa-github"></i></div>
-            <span>Github</span></div>
+            <span><a href="https://github.com/Zeroplan123" target="_blank">Github</a></span></div>
             
             <div class="button">
             <div class="icons"><i class="fa-brands fa-youtube"></i></div>
-            <span>Youtube</span></div>
+            <span><a href="https://www.facebook.com/profile.php?id=61558977178997&mibextid=ZbWKwL" target="_blank">Youtube</a></span></div>
         </div>
     </section>
 
     <!-- content-2 -->
-     <div class="pemisah"></div>
+     
 
-    <section class="content-2">
+
+    <section class="content-2"  >
 
         <div class="content-2-wrapper">
             <div class="box">
@@ -146,14 +160,159 @@
             <div></div>
             <div></div>
         </div>
+        <div class="skill-2-con">
+            <div class="skill-wrapper-container">
+        <div class="skill-wrapper" data-aos="fade-right" data-aos-duration="2000">
+            <div class="skill-container">
+                <h2>My SKILL</h2>
+                <div class="skills">
+                    <div class="skill-details">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="html-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skill-details">
+                        <span>CSS</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="css-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skill-details">
+                        <span>JAVASCRIPT</span>
+                        <Span>60%</Span>
+                    </div>
+                    <div class="bar">
+                        <div id="js-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skill-details">
+                        <span>PHP</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="php-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+      
+
         </div>
 
+
+        <div class="skill-wrapper-2" data-aos="fade-left" data-aos-duration="2000">
+            <div class="skill-container"  >
+                <h2>My SKILL</h2>
+                <div class="skills">
+                    <div class="skill-details">
+                        <span>Communication</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="bar-2">
+                        <div id="com-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skill-details">
+                        <span>Management</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="bar-2">
+                        <div id="man-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skill-details">
+                        <span>JAVASCRIPT</span>
+                        <Span>60%</Span>
+                    </div>
+                    <div class="bar-2">
+                        <div id="js-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skill-details">
+                        <span>PHP</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="bar-2">
+                        <div id="php-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-container" id="services">
+            <div class="timeline-atas">
+                <h1>SERVICES</h1>
+    
+            </div>
+    
+            <div class="timeline">
+                <div class="isi-timeline"></div>
+                <div class="section">
+                    <div class="head"></div>
+                    <div class="timeline-content">
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi numquam eos labore et delectus. Minima soluta, non nisi facere</p>
+                    </div>
+                </div>
+    
+    
+                <div class="section">
+                    <div class="head"></div>
+                    <div class="timeline-content">
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi numquam eos labore et delectus. Minima soluta, non nisi facere</p>
+                    </div>
+                </div>
+    
+                <div class="section">
+                    <div class="head"></div>
+                    <div class="timeline-content">
+                        <h2>FrondEnd</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi numquam eos labore et delectus. Minima soluta, non nisi facere</p>
+                    </div>
+                </div>
+    
+    
+                <div class="section">
+                    <div class="head"></div>
+                    <div class="timeline-content">
+                        <h2>BackEnd</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi numquam eos labore et delectus. Minima soluta, non nisi facere</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+        
     </section>
+
+    <!-- project -->
+    <section class="Project">
+  
+    </section>
+
     <script src="https://kit.fontawesome.com/f898f9c553.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="portofolio.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

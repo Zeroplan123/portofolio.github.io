@@ -4,7 +4,7 @@ function showbar() {
     setTimeout(() => {
         sidebar.style.transform = "translateX(0)";
         sidebar.style.opacity = "1";
-    }, 10); // small delay to ensure the display property is set before transition
+    }, 10); 
 }
 
 function hidebar() {
@@ -20,5 +20,29 @@ var typed = new Typed(".auto-text", {
     backSpeed: 150,
     loop: true
 })
+
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.section');
+    const triggerBottom = window.innerHeight / 5 * 4;
+    const timelineLine = document.querySelector('.isi-timeline');
+
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop < triggerBottom) {
+            section.classList.add('show-me');
+        } else {
+            section.classList.remove('show-me');
+        }
+    });
+
+    const firstSectionTop = sections[0].getBoundingClientRect().top;
+    if (firstSectionTop < triggerBottom) {
+        timelineLine.classList.add('show-line');
+    } else {
+        timelineLine.classList.remove('show-line');
+    }
+});
+
 
 

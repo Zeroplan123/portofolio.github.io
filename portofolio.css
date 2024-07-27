@@ -187,6 +187,7 @@ nav p {
 }
 
 .home-content {
+
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -230,7 +231,7 @@ nav p {
     box-shadow: 0 0 25px #ffffff;
     letter-spacing: 0.1rem;
     font-weight: 500;
-    padding: 5px 45px;
+    padding: 10px 45px;
     transition: 0.5s;
 }
 
@@ -426,6 +427,7 @@ nav p {
     overflow: hidden;
 }
 
+
 .img-content-1 img{
     height: 400px;
     width: 400px;
@@ -486,11 +488,17 @@ nav p {
     padding-left: 150px;
     z-index: 1;
     border-radius: 10px;
-    margin-top: 30%;
+    margin-top: 35%;
     right: 100px;
     position: absolute;
     width: 100vh;
     height: 100px;
+}
+
+.Bio{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 .button{
@@ -542,41 +550,53 @@ nav p {
     transition: all 0.5s ease-out;
 }
 
+
 .icons i{
     font-size: 25px;
     line-height: 60px;
     transition: all 0.5s ease-out;
 }
 
-.icons span{
-    font-size: 25px;
+.button span{
+    font-size: 15px;
     line-height: 60px;
     font-weight: 500;
-    margin-left: 50px;
+    margin-left: 20px;
     transition: all 0.5s ease-out;
+
+
+}
+
+.button span a{
+    text-decoration: none;
 }
 
 .button:hover .icons i{
     color: #fff;
 }
 
-.button:nth-child(1):hover span{
+.button:nth-child(1):hover span a{
     color: #4267b2;
 }
-.button:nth-child(2):hover span{
+.button:nth-child(2):hover span a{
     color: #e1306c;
 }
-.button:nth-child(3):hover span{
+.button:nth-child(3):hover span a{
     color: #fff;
 }
-.button:nth-child(4):hover span{
+.button:nth-child(4):hover span a{
     color: #ff0000;
 }
 
+.button span a:hover{
+    opacity: 50%;
+    transition: 0.3s;
+}
+
 .content-2-wrapper{
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -639,6 +659,154 @@ nav p {
     animation: content2 5s linear infinite;
 }
 
+.skill-wrapper{
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+}
+.skill-wrapper-2{
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    top: 0%;
+    right: 5%;
+}
+
+.skill-wrapper-container{
+    display: flex;
+  
+}
+
+.skill-container{
+    box-shadow: 0 25px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(18px);
+    width: 100%;
+    padding: 60px 40px;
+   
+}
+.skill-container *{
+    color: #fff;
+    font-weight: 500;
+}
+
+.skill-container h2{
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+
+}
+
+.skills:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.skill-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar{
+    position: relative;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.06);
+    padding: 7px 10px;
+    backdrop-filter: blur(18px);
+}
+
+.bar div{
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #5bc7f5;
+    box-shadow:0 0 5px rgba(28,151,252,0.06);
+}
+
+.bar-2{
+    position: relative;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.06);
+    padding: 7px 10px;
+    backdrop-filter: blur(18px);
+}
+
+.bar-2 div{
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #5bc7f5;
+    box-shadow:0 0 5px rgba(28,151,252,0.06);
+}
+
+#com-bar{
+    animation: com 2s forwards;
+}
+
+#html-bar{
+    animation: html 2s forwards;
+}
+
+#css-bar{
+    animation: css 2s forwards;
+}
+
+#js-bar{
+    animation: js 2s forwards;
+}
+
+#php-bar{
+    animation: php 2s forwards;
+}
+
+#man-bar{
+    animation: man 2s forwards;
+}
+
+
+
+
+@keyframes html {
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes js{
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes php {
+    100%{
+        width: 55%;
+    }
+}
+@keyframes com {
+    100%{
+        width: 80%;
+    }
+}
+@keyframes man {
+    100%{
+        width: 80%;
+    }
+}
+
+
+
+
 @keyframes content2 {
     
     0%{
@@ -651,6 +819,109 @@ nav p {
         opacity: 0;
     }
 }
+
+
+ .timeline-container{
+        position: relative;
+        color: #fff;
+        padding: 2rem;
+        padding-bottom: 200px;
+        margin: 0 auto;
+        max-width: 800px;
+        margin-top: 100vh;
+    }
+    
+    .timeline-atas{
+        text-align: center;
+        padding: 4rem 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .timeline{
+        position: relative;
+        min-height: 150px;
+    }
+    
+    .isi-timeline{
+        position: absolute;
+        z-index: 1;
+        left: calc(50% - 1px);
+        width: 2px;
+        top: -50px;
+        bottom: -50px;
+        background-color: #fff;
+    }
+    
+    .isi-timeline:before,.isi-timeline::after{
+        position: absolute;
+        display: block;
+        content: '';
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+    
+    }
+    
+    .isi-timeline::after{
+        bottom: 0;
+    }
+    
+    .section{
+        display: flex;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+        position: relative;
+        z-index: 1;
+        margin: 50px 0;
+        padding: 1rem;
+        align-items: center;
+        border-radius: 1rem;
+        min-height: 300px;
+    }
+    
+    .section:nth-child(odd){
+        flex-direction: row-reverse;
+        transform: translateX(100%);
+    }
+    
+    .head{
+        position: absolute;
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: #fff;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%);
+    }
+    
+    .timeline-content{
+        color: #5bc7f5;
+        width: calc(50% - 2rem);
+    
+    }
+    
+    .timeline-content h2{
+        color: #fff;
+    }
+    
+    .show-me:nth-child(n){
+        transform: none;
+        opacity: 1;
+    }
+    
+    .timeline-atas h1{
+        font-weight: 500;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+
 
 
 @media screen and (max-width: 1024px){
@@ -680,6 +951,8 @@ nav p {
     }
 
     .home-content{
+        width: 100%;
+        transform: translateX(-40px);
         left: 0;
         text-align: left;
         padding: 0;
@@ -698,9 +971,9 @@ nav p {
     }
 
     .home-content p{
-        max-width: 100%;
+        width: 99%;
         margin-left: 50px;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .home-img img{
@@ -713,7 +986,7 @@ nav p {
     
 
     .home-img{
-        width: 450px;
+    width: 450px;
     height: 450px;
     overflow: hidden;
     position: relative;
@@ -735,7 +1008,8 @@ nav p {
     }
     
     .tombol{
-
+        text-align: center;
+        width: 30%;
         font-family: "Roboto";
         border-radius: 10px;
         margin-top: 25px;
@@ -753,9 +1027,12 @@ nav p {
     }
 
     .content-1{
-        min-height: 100vh;
         padding-bottom: 10px;
         display: flex;
+    }
+
+    .content-1-wrapper{
+        min-height: 100vh;
     }
 
     .img-content-1{
@@ -763,7 +1040,7 @@ nav p {
         width: fit-content;
         box-shadow: 0 0 30px #5bc7f5;
         position: absolute;
-        margin-top: 150px;
+        margin-top: 30%;
         margin-left: 50px;
         border-radius: 10px;
         z-index: 1;
@@ -782,7 +1059,7 @@ nav p {
         box-shadow: 0 0px 25px #5bc7f5;
         border-radius: 10px;
         backdrop-filter: blur(18px);
-        margin-top: 150px;
+        margin-top: 30%;
         text-align: center;
         height: fit-content;
         width: 45%;
@@ -809,12 +1086,13 @@ nav p {
     .sosial-media{
         z-index: 1;
         border-radius: 10px;
-        margin-top: 42%;
+        margin-top: 70%;
         position: absolute;
         width: 45%;
         right: 40px;
         height: 100px;
         padding-left: 0;
+        margin-bottom: 0;
 
     }
 
@@ -822,8 +1100,42 @@ nav p {
         background: none;
         backdrop-filter: blur(18px);
     }
+    .skill-wrapper{
+        left: 2.5%;
+        min-width: 450px;
+    }
+    .skill-wrapper-2{
+        min-width: 450px;
+        right: 2.5%;
+    }
+
+    .timeline-container{
+        margin-top: 50vh;
+    }
+
+    
+
+
 
 } 
+
+@media screen and (max-width: 900px) {
+    .content-1-text{
+        right: 25px;
+        width: 40%;
+    }
+
+    .sosial-media{
+        padding-left: 60px;
+        margin-top: 52%;
+    }
+
+    .skill-wrapper-container{
+        justify-content: space-between;
+    }
+
+    
+}
 
 
 
@@ -866,18 +1178,18 @@ nav p {
 
     .home-content h3{
         margin-left: 50px;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .home-content h1{
         margin-left: 50px;
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .home-content p{
         max-width: 100%;
         margin-left: 50px;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .home-img img{
@@ -914,7 +1226,7 @@ nav p {
     }
 
     .content-1{
-        min-height: 100vh;
+        min-height: 115vh;
         padding-bottom: 10px;
         display: flex;
     }
@@ -953,7 +1265,7 @@ nav p {
     .sosial-media{
 
         max-height: 50px;
-        margin-top: 90%;
+        margin-top: 100%;
         max-width: 90%;
         left: 5%;
         border: NONE;
@@ -967,18 +1279,41 @@ nav p {
         backdrop-filter: blur(18px);
     }
 
+
+    .skill-wrapper,
+    .skill-wrapper-2{
+        top: 100px;
+        width: 40%;
+        min-width: 0;
+        
+    }
+
+    .timeline-container{
+        margin-top: 100vh;
+    }
+
+  
+
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
+    
+    
     .sosial-media{
         border: NONE;
         padding-left: 0;
         width: 100%;
         padding-top: 0;
-        margin-top: 126%;
+        margin-top: 145%;
+    }
+    
+    .home-content{
+        padding: 0;
+        margin: 0;
     }
 
+  
     .menu-sidebar {
         font-size: 15px;
         width: 30%;
@@ -1005,6 +1340,20 @@ nav p {
         line-height: 40px;
 }
 
+
+
+.home-content h1{
+    font-size: 2rem;
+}
+
+.home-content h3{
+    font-size: 1.5rem;
+}
+
+.home-content p{
+    font-size: 1rem;
+}
+
 .icons span{
     padding-bottom: 5PX;
     font-size: 15px;
@@ -1019,12 +1368,33 @@ nav p {
     width: 140px;
 }
 
+.timeline-content p{
+    font-size: 0.9rem;
+}
+
+.skill-wrapper{
+    width: 90%;
+}
+
+.skill-wrapper-2{
+    width: 90%;
+    left: 5%;
+    margin-top: 120vh;
+}
+
+.timeline-container{
+    margin-top: 235vh;
+}
+
+.Bio p{
+    font-size: 10px;
+}
 
 }
 
 @media screen and (max-width: 375px){
     .sosial-media{
-        margin-top: 130%;
+        margin-top: 160%;
         border: NONE;
         padding-left: 0;
         width: 100%;
@@ -1068,10 +1438,14 @@ nav p {
 
 }
 
+.timeline-content h2{
+    font-size: 1.3rem;
+}
+
 @media screen and (max-width: 320px) {
     .sosial-media{
         padding-top: 0;
-        margin-top: 150%;
+        margin-top: 170%;
         border: NONE;
         padding-left: 0;
         width: 100%;
@@ -1099,6 +1473,14 @@ nav p {
         line-height: 40px;
 }
 
+.home-content h3{
+    font-size: 1.3rem;
+}
+
+.home-content p{
+    font-size: 0.9rem;
+}
+
 .icons span{
     padding-bottom: 5PX;
     font-size: 15px;
@@ -1111,6 +1493,10 @@ nav p {
     background: none;
     backdrop-filter: blur(18px);
     width: 40px;
+}
+
+.timeline-container{
+    margin-top: 225vh;
 }
 }
 
