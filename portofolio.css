@@ -1032,15 +1032,15 @@ nav p {
         }
     
         .content-1-wrapper {
-            min-height: 100vh;
+            min-height: 145vh;
         }
     
         .img-content-1 {
-            height: 250px;
+            height: 400px;
             width: fit-content;
             box-shadow: 0 0 30px #5bc7f5;
             position: absolute;
-            margin-top: 5%;
+            margin-top: 10%;
             margin-left: 50px;
             border-radius: 10px;
             z-index: 1;
@@ -1048,8 +1048,8 @@ nav p {
         }
     
         .img-content-1 img {
-            height: 250px;
-            width: 250px;
+            height: 400px;
+            width: 400px;
             border-radius: 10px;
             transition: 0.5s;
         }
@@ -1059,7 +1059,7 @@ nav p {
             box-shadow: 0 0 25px #5bc7f5;
             border-radius: 10px;
             backdrop-filter: blur(18px);
-            margin-top: 15px;
+            margin-top: 10%;
             text-align: center;
             height: fit-content;
             width: 45%;
@@ -1084,7 +1084,7 @@ nav p {
         .sosial-media {
             z-index: 1;
             border-radius: 10px;
-            margin-top: 35%;
+            margin-top: 45%;
             position: absolute;
             width: 45%;
             right: 40px;
