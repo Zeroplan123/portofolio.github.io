@@ -769,6 +769,12 @@ nav p {
 #man-bar{
     animation: man 2s forwards;
 }
+#team-bar{
+    animation: team 2s forwards;
+}
+#crea-bar{
+    animation: creatif 2s forwards;
+}
 
 
 
@@ -804,6 +810,16 @@ nav p {
 @keyframes man {
     100%{
         width: 80%;
+    }
+}
+@keyframes team {
+    100%{
+        width: 70%;
+    }
+}
+@keyframes creatif {
+    100%{
+        width: 40%;
     }
 }
 
@@ -925,7 +941,148 @@ nav p {
         letter-spacing: 1px;
     }
 
+    .project-container{
+        position: relative;
+    }
 
+    .card-wrapper{
+        margin-bottom: 50px;
+    }
+
+    .project-container h1{
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .card-wrapper{
+        color: #fff;
+        padding: 10px 10%;
+    }
+
+    .card-area{
+        padding: 50px 0;
+    }
+
+    .box-area{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 50px;
+        margin-top: 50px;
+    }
+
+    .card-box{
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-box img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+    }
+
+    .overlays{
+        position: absolute;
+        height: 0;
+        width: 100%;
+        background: linear-gradient(transparent, #061016 60%);
+        border-radius: 10px;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+        text-align: center;
+        font-size: 12px;
+        flex-direction: column;
+        transition: height 0.5s;
+    }
+
+    .overlays h3{
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom: 5px;
+        margin-top: 80%;
+        letter-spacing: 2px;
+
+    }
+
+    .overlays p{
+        font-size: 12px;
+    }
+
+    .overlays a{
+        margin-top: 10px;
+        color: #08161f;
+        text-decoration: none;
+        font-size: 15px;
+        background-color: #5bc7f5;
+        border-radius: 50px;
+        text-align: center;
+        padding: 5px 15px;
+        margin-bottom: 25px;
+    }
+
+
+
+    .card-box:hover .overlays{
+        height: 180%;
+    }
+
+    .project-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg,  #03070a 2%, rgba(21, 21, 21, 0) 10%);
+        pointer-events: none;
+        z-index: -1;
+    }
+   footer{
+    padding-bottom: 50px;
+    height: fit-content;
+    background-color:  #03070a;
+   }
+
+   .credits2{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+ 
+    .credits{
+        padding-top: 50px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+
+    footer a{
+        text-decoration: none;
+    }
+
+    footer a:hover{
+        opacity: 50%;
+        transition: 0.5s;
+    }
 
     @media screen and (max-width: 1024px) {
 
@@ -1111,13 +1268,18 @@ nav p {
         .timeline-container {
             margin-top: 120vh;
         }
+
+        .card-box:hover .overlays{
+            height: 180%;
+        }
+        
     }
 
     
     
     
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .content-1-text{
         right: 25px;
         width: 40%;
@@ -1125,7 +1287,7 @@ nav p {
 
     .sosial-media{
         padding-left: 60px;
-        margin-top: 52%;
+        margin-top: 55%;
     }
 
     .skill-wrapper-container{
@@ -1290,7 +1452,10 @@ nav p {
         margin-top: 100vh;
     }
 
-  
+    .card-box:hover .overlays{
+        height: 180%;
+    }
+
 
 }
 
@@ -1388,6 +1553,17 @@ nav p {
     font-size: 10px;
 }
 
+.timeline-content p{
+    display: none;
+}
+
+.credits{
+    font-size: 20px;
+}
+.credits2{
+    font-size: 15px;
+}
+
 }
 
 @media screen and (max-width: 375px){
@@ -1434,11 +1610,15 @@ nav p {
     width: 140px;
 }
 
-}
-
 .timeline-content h2{
     font-size: 1.3rem;
 }
+
+
+
+}
+
+
 
 @media screen and (max-width: 320px) {
     .sosial-media{
@@ -1452,7 +1632,7 @@ nav p {
   
 
     .menu-sidebar ul  {
-        margin-left: 5px;
+        margin-left: 0px;
     }
 
     .button{
@@ -1495,6 +1675,10 @@ nav p {
 
 .timeline-container{
     margin-top: 225vh;
+}
+
+.overlays p{
+    font-size: 0.6rem;
 }
 }
 

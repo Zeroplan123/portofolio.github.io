@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portofolio | Fahri Ramadhan G.</title>
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="portofolio.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav>
 
-        <div><p>Andrs</p></div>
+        <div><p>FAHRI</p></div>
 
         <div class="navbar-menu">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Project</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html#project">Project</a></li>
                 <li><a href="index.html#page1">About Me</a></li>
-                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#services">Education</a></li>
                 <li><a href="">contact</a></li>
             </ul>
         </div>
@@ -28,10 +29,10 @@
         <div class="menu-sidebar">
         <ion-icon name="close-outline" style="color: #ffffff; font-size: 35px; position: absolute; left: 0;" onclick="hidebar()"></ion-icon>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Project</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="index.html#services">Services</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html#project">Project</a></li>
+                <li><a href="index.html#page1">About Me</a></li>
+                <li><a href="index.html#services">Education</a></li>
                 <li><a href="">contact</a></li>
             </ul>
         </div>
@@ -53,7 +54,7 @@
             <p>In every journey to success, challenges are loyal companions that test our resilience and determination. However, never let adversity stop you in your tracks. Remember that every obstacle is an opportunity to grow and learn.</p>
 
             <div class="btn-grup">
-                <a href="#" class="tombol"><span>Hire me</span><i></i></a>
+                <a href="#" class="tombol" onclick="hire()"><span>Hire me</span><i></i></a>
 
             </div>
         </div>
@@ -231,20 +232,20 @@
                 </div>
                 <div class="skills">
                     <div class="skill-details">
-                        <span>JAVASCRIPT</span>
-                        <Span>60%</Span>
+                        <span>Teamwork</span>
+                        <Span>70%</Span>
                     </div>
                     <div class="bar-2">
-                        <div id="js-bar"></div>
+                        <div id="team-bar"></div>
                     </div>
                 </div>
                 <div class="skills">
                     <div class="skill-details">
-                        <span>PHP</span>
-                        <span>55%</span>
+                        <span>creativity</span>
+                        <span>40%</span>
                     </div>
                     <div class="bar-2">
-                        <div id="php-bar"></div>
+                        <div id="crea-bar"></div>
                     </div>
                 </div>
             </div>
@@ -252,7 +253,7 @@
 
         <div class="timeline-container" id="services">
             <div class="timeline-atas">
-                <h1>SERVICES</h1>
+                <h1>EDUCATION</h1>
     
             </div>
     
@@ -261,8 +262,8 @@
                 <div class="section">
                     <div class="head"></div>
                     <div class="timeline-content">
-                        <h2>Web Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi numquam eos labore et delectus. Minima soluta, non nisi facere</p>
+                        <h2>SDN 05 PADTIM</h2>
+                        <p>I started my primary education at SD Negeri 05 Jakarta, a school known for its dedication in providing quality education and focusing on children's character development. </p>
                     </div>
                 </div>
     
@@ -270,16 +271,17 @@
                 <div class="section">
                     <div class="head"></div>
                     <div class="timeline-content">
-                        <h2>Web Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi numquam eos labore et delectus. Minima soluta, non nisi facere</p>
+                        <h2>SMPN 23 JAKARTA</h2>
+                        <p>I continued my education at SMP Negeri 23 Jakarta, where I spent three years filled with challenges and achievements. This period was an important phase in my academic and personal development, where I began to discover my true interests and talents.</p>
                     </div>
                 </div>
     
                 <div class="section">
                     <div class="head"></div>
                     <div class="timeline-content">
-                        <h2>FrondEnd</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi numquam eos labore et delectus. Minima soluta, non nisi facere</p>
+                        <h2>SMKN 1 JAKARTA</h2>
+                        <p>I continued my education at SMK Negeri 1 Jakarta, choosing to major in Software Engineering which aligned with my interest in information technology. This period was very important in developing my technical and professional skills.
+                        </p>
                     </div>
                 </div>
     
@@ -287,8 +289,8 @@
                 <div class="section">
                     <div class="head"></div>
                     <div class="timeline-content">
-                        <h2>BackEnd</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi numquam eos labore et delectus. Minima soluta, non nisi facere</p>
+                        <h2>COMING SOON</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi numquam eos labore et delectus. Minima soluta, non nisi facere</p> -->
                     </div>
                 </div>
     
@@ -300,8 +302,60 @@
     </section>
 
     <!-- project -->
-    <section class="Project">
-  
+    <section class="Project" id="project">
+        <div class="project-container">
+            <h1>Project</h1>
+
+            <div class="card-area">
+                <div class="card-wrapper">
+                    <div class="box-area">
+
+                        <div class="card-box">
+                            <div style="height: 100%;">
+                            <img src="assets/flappy_plane.jpeg" alt="">
+                            <h2 style="transform: translateY(-50px); text-align: center; color:  #fff; font-weight: 600;">Flappy Plane 2001</h2>
+                        </div>
+                            <div class="overlays">
+                                <h3>Flappy Plane</h3>
+                                <p>game adaptation of flappy bird with airplane theme</p>
+                                <a href="https://zeroplan123.github.io/flappy-plane.github.io/" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div style="height: 100%;">
+                                <img src="assets/to-do list.jpeg" alt="">
+                                <h2 style="transform: translateY(-50px); text-align: center; color:  #fff; font-weight: 600;">To-do list</h2>
+                            </div>
+                            <div class="overlays">
+                                <h3>To do list</h3>
+                                <p>program to record the activities you have to do</p>
+                                <a href="https://zeroplan123.github.io/to-do-list-generator.github.io/" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div style="height: 100%;">
+                                <img src="assets/vd.jpeg" alt="">
+                                <h2 style="transform: translateY(-50px); text-align: center; color: #fff; font-weight: 600;">VD-Web</h2>
+                            </div>
+                            <div class="overlays">
+                                <h3>VD website</h3>
+                                <p>a student group web called voksi doksi</p>
+                                <a href="https://zeroplan123.github.io/VD.github.io/" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <footer>
+            <p class="credits">Thanks for visit my website</p>
+            <p class="credits2">&copy;2024 Fahri RG |<span style="padding-left: 5px; "><a href="#">credits</a></span></p>
+        </footer>
     </section>
 
     <script src="https://kit.fontawesome.com/f898f9c553.js" crossorigin="anonymous"></script>

@@ -45,4 +45,8 @@ window.addEventListener('scroll', () => {
 });
 
 
+function hire(){
+    alert("masih sekolah belom mau di hire");
+}
+
 
